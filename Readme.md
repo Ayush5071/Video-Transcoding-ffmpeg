@@ -91,11 +91,6 @@ This project is a full-stack web application that allows users to upload videos,
 ## 
 Here’s the complete README.md file structured with each section provided one by one in code format. You can copy each section into your README.md file as needed.
 
-Project Structure
-markdown
-Copy code
-# Video Upload HLS App
-
 ## Project Structure
 
 /video-upload-hls-app ├── /frontend # React frontend application │ ├── /src # Source files │ ├── /public # Public files │ └── package.json # Frontend dependencies └── /server # Express backend application ├── /middleware # Middleware for file storage ├── uploads # Folder for uploaded videos ├── package.json # Backend dependencies └── server.js # Main server file
@@ -125,37 +120,22 @@ perl
 Copy code
 
 ### Running the Server
-```markdown
-### Running the Server
 
 1. Start the Server
-   ```bash
    npm start
 The server will run on http://localhost:8000.
 
-csharp
-Copy code
-
-### API Endpoints
-```markdown
 ### API Endpoints
 - **GET /**: Returns a simple welcome message.
 - **POST /uploads**: Accepts video file uploads and triggers the transcoding process. The response includes the video URL for playback.
 
 ### Example Response
-
-### Example Response
-```json
+json
 {
   "message": "Video converted to HLS",
   "videoUrl": "http://localhost:8000/uploads/courses/{lessonId}/index.m3u8",
   "lessonId": "{lessonId}"
 }
-
-
-### Frontend Setup
-```markdown
-## Frontend Setup
 
 ### Requirements
 - Node.js: Ensure you have Node.js installed (v14 or higher).
@@ -166,8 +146,7 @@ Copy code
    ```bash
    cd ../frontend
 \
-### Running the Frontend
-```markdown
+
 ### Running the Frontend
 
 1. Start the Frontend
